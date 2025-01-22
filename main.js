@@ -21,3 +21,22 @@ window.onscroll = () => {
   menu.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
+
+const filterButton = document.querySelectorAll(".categories-container i");
+const filterablecard = document.querySelectorAll(".products-container .box");
+
+const filterCards = (e) => {
+  //console.log(e.target);
+
+  filterablecard.forEach((box) => {
+    box.classList.add("hide");
+    if (
+      box.dataset.name === e.target.dataset.name ||
+      e.target.dataset.name === "all"
+    ) {
+      box.classList.remove("hide");
+    }
+  });
+};
+
+filterButton.forEach((i) => i.addEventListener("click", filterCards));
