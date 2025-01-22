@@ -37,10 +37,6 @@ section {
   padding: 4.5rem 0 1.5rem;
 }
 
-img {
-  width: 100%;
-}
-
 body {
   color: var(--text-color);
 }
@@ -65,14 +61,6 @@ header {
   align-items: center;
   column-gap: 0.5rem;
   cursor: pointer;
-}
-
-.profile img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
 }
 
 .profile span {
